@@ -1,0 +1,103 @@
+<head>
+    
+    <meta name="description" content="Math homework help">
+		
+    <!-- link to main stylesheet -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/tsparticles@1.39.2/tsparticles.min.js" integrity="sha256-FCz5ToEA27payrGYaVGRidiIA+68Z31TBXFzcIT1/gU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="icon" href="https://ssl.gstatic.com/classroom/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../css/cursor.css">
+    <script src="../js/cursor.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/tsparticles@1.39.2/tsparticles.min.js" integrity="sha256-FCz5ToEA27payrGYaVGRidiIA+68Z31TBXFzcIT1/gU=" crossorigin="anonymous"></script>
+    <link rel="prefetch" as="script" href="https://cdn.jsdelivr.net/npm/tsparticles@1.39.2/tsparticles.pathseg.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+</head>
+<html>
+    <div id="particles-js" class="fullwidth">
+    </div>
+<div id="settings" style="top: 0; ">
+<h1>Settings</h1>
+<div [hidden]="!ischecked"></div>
+
+<h2 style="color: #f5f2f2; font-size: 100%;">
+    Abort
+    </h2>
+     
+    <br>      
+           <!-- <input id="togAbort" type="checkbox" class="checkbox" autocomplete="true" > Toggle Abort </input>-->
+           <label class="switch">
+    <input id="togAbort" type="checkbox" class="checkbox">
+    <span class="slider"> 
+        
+    </span>
+    </label>
+
+   
+<br>
+         
+           <br>
+            <form id="doctitl" onsubmit="return false;" method="post">
+                Tab Name: <input type="text"> </form>
+            </input>
+
+        </label>
+         
+      
+          <br>
+         
+          <button onclick="getValue()">Submit</button>
+          <p id="abort1">Sucess! Your settings will be saved across all pages with a Settings option! Turn off, by unchecking and hitting submit.</p>
+<script src="../g_mes/js/abort.js"></script>
+<script src="../js/test.js"></script>
+<script src="../js/settings.js"></script>
+</div>
+
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Aleo");
+    body {
+        font-family: 'Aleo', serif;
+        color: #ada8b6;
+        background-image: url("../images/settings.jpg");
+        overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    }
+
+    body::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+#settings {
+	text-align: center;
+	position: absolute;
+        right: 10px;
+
+	display: block;
+}
+#abort1 {
+    display: none;
+    color: white;
+    font-size: 12px;
+}
+
+</style>
+
+<script defer="defer" src="../ok.js"></script>
+<script defer="defer">
+    function q(){
+        document.querySelectorAll('canvas')[0].style.zIndex = "-1";
+    }
+    setTimeout(q,100)
+</script>
+<script>
+    AOS.init();
+</script>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Math Homework</title>
+		<meta name="description" content="Math homework help">
+		
+		<!-- link to main stylesheet -->
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<script defer="defer" src="https://cdn.jsdelivr.net/npm/tsparticles@1.39.2/tsparticles.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+		<link rel="icon" href="https://ssl.gstatic.com/classroom/favicon.png">
+		<link rel="stylesheet" type="text/css" href="css/cursor.css">
+        <script src="js/cursor.js"></script>
+		<link rel="prefetch" as="script" href="https://cdn.jsdelivr.net/npm/tsparticles@1.39.2/tsparticles.pathseg.min.js">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="prefetch" as="script" href="https://cdn.jsdelivr.net/npm/tsparticles@1.39.2/tsparticles.pathseg.min.js">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		
+		</head>
+		<div class="node" id="node"></div>
+    <div class="cursor" id="cursor"></div>
+
+	<div id="particles-js" class="fullwidth">
+	</div>
+	<header>
+		<img class="logo" src="images/msglogo.png"></img>
+	<!--
+<nav>	
+<ul>
+		<li class="nav"><a href="g_mes/g@mes.html"> G@mes! </a></li>	
+		<li class="nav"><a href="about/about.html"> About </a></li>
+		<li class="nav"><a href="https://github.com/Cattn/msgv2"> Github </a></li>
+		<li class="nav"><a href="https://sites.google.com/stu.palmbeachschools.org/mathlearningcenter/home"> Main Site </a></li>
+		<li class="nav"><a href="https://discord.gg/mathstudy"> Discord </a></li>
+		<li class="nav"><a onclick="getSettings()" id="setting"> Settings </a></li>
+</ul>
+</nav>-->
+<button class="navdrop"style="height: min-content;
+color: rgb(0, 255, 0);	background: none;
+z-index: 99;
+border-radius: 10px;
+position: fixed;
+right: calc(2rem);cursor: pointer;"> 
+<svg viewBox="0 0 100 80" width="40" height="40" "="" class="okri" style="color: white;">
+	<rect width="100" height="10" style="fill:#ffeedb"></rect>
+	<rect y="30" width="100" height="10" style="fill:#ffeedb"></rect>
+	<rect y="60" width="100" height="10" style="fill:#ffeedb"></rect>
+	</svg></button>
+</header>
+
+<!--
+		<li class="nav"><a href="g_mes/g@mes.html"> G@mes! </a></li>	
+		<li class="nav"><a href="about/about.html"> About </a></li>
+		<li class="nav"><a href="https://github.com/Cattn/msgv2"> Github </a></li>
+		<li class="nav"><a href="https://sites.google.com/stu.palmbeachschools.org/mathlearningcenter/home"> Main Site </a></li>
+		<li class="nav"><a href="https://discord.gg/mathstudy"> Discord </a></li>
+		<li class="nav"><a onclick="getSettings()" id="setting"> Settings </a></li>
+-->
+<div id="settingsMenu" class="context-menu" style="display: none; position: absolute; right: 0px; width: 200px; height: auto; z-index: 69420; transition: all 0.5s ease 0s; box-shadow: rgba(16, 59, 202, 0.918) 0px 0px 20px 0px inset; background: rgba(0, 0, 0, 0.714); border-radius: 15px;">
+	<ul style="list-style: none; padding: 5px 0px 5px 0px;">
+	<a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; color: rgb(0, 255, 0); display: list-item; text-align: -webkit-match-parent; border:none !important; box-shadow: none !important;" href="g_mes/g@mes.html">G@mes!</a>
+	<a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; color: rgb(0, 255, 0); display: list-item; text-align: -webkit-match-parent; border:none !important; box-shadow: none !important;" href="about/about.html">About</a>
+	<a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; color: rgb(0, 255, 0); display: list-item; text-align: -webkit-match-parent; border:none !important; box-shadow: none !important;" href="https://sites.google.com/stu.palmbeachschools.org/mathlearningcenter/home">Main Site</a>
+	<a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; color: rgb(0, 255, 0); display: list-item; text-align: -webkit-match-parent; border:none !important; box-shadow: none !important;" href="https://discord.gg/mathstudy">Discord</a>
+	<a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; color: rgb(0, 255, 0); display: list-item; text-align: -webkit-match-parent; border:none !important; box-shadow: none !important;" onclick="getSettings()">Settings</a>
+	</ul>
+	</div>
+
+	<body>
+		<h1>Math Study Group</h1>
+		<h3>MSGv2-beta Site</h3>
+		<p>This site is still in progress by the Math Study team, please be patient and if you find bugs,</p>
+		<p>report them in discord.gg/mathstudy, thank you for visiting!</p>
+	<br>
+	
+		<p><a href="g_mes/g@mes.html">Games!</a></p>
+	
+		<p><a href="testfolder/index.html">Basket Bros Beta Test</a></p>
+		
+		<p><a href="bunker/index.html">Bunker/GoGuardian Bypass</a></p>
+		
+		<p><a href="localstorage/test.html">Test Local Storage</a></p>
+		
+		<p><a href="about/aborth.html">What is Abort?</a></p>
+		
+		<p>Most settings will be located on the games page, and they are under construction so please keep that in mind when using them.</p>
+		<div id="settings"></div>
+		
+		<script src="js/test.js"></script>
+		<script src="js/settings.js"></script>
+		<script src="js/abortindex.js"></script>
+		
+		
+		
+		
+		
+		<script>
+            var initCursor = new NodeCursor({
+                cursor: true,
+                node: true,
+                cursor_velocity: 1,
+                node_velocity: .5,
+                native_cursor: 'none',
+                element_to_hover: '.nodeHover',
+                cursor_class_hover: 'disable',
+                node_class_hover: 'expand',
+                hide_mode: true,
+                hide_timing: 2000,
+            });
+        </script>
+			<script>
+				AOS.init();
+			</script>
+		
+		<script defer="defer" src="ok.js"></script>
+		<script defer="defer">
+		function q(){
+			document.querySelectorAll('canvas')[0].style.zIndex = "-1";
+		}
+		setTimeout(q,100)
+		</script>
+	</body>
+</html>

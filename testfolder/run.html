@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="sli_err"></p>
+        <button onclick="openFullscreen();"> Open in fullscreen! </button>
+        <iframe id="ctrl" class="google"></iframe>
+        <script src="list.js"></script>
+        <script>
+            const urlq = new URLSearchParams("?"+location.href.split("?")[1]);
+            var i = urlq.get("i");
+            if(window.glist != undefined){
+                if(glist[i] == undefined){
+                    document.getElementById("sli_err").innerHTML = "Game listing not found!";
+                }
+                var u = glist[i]["url"];
+                const proxy = "https://science.skystrike.ml/?url={{url}}";
+                document.getElementById("ctrl").src = proxy.replace("{{url}}",u);
+            } else {
+                document.getElementById("sli_err").innerHTML = "Error: list not found!";
+            }
+        </script>
+        <style>
+            iframe {
+                border: 0;
+                width: 1350px;
+                height: 650px;
+            }
+        </style>
+        <script src="fullscreen.js"></script>
+    </body>
+</html>

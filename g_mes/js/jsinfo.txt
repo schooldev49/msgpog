@@ -1,0 +1,5 @@
+Basically this houses the about:blank opener, and the fullscreen functions, in
+the future it will also include functions to open games in a random/selectable proxy
+link all in one page using variables I'd assume in the iframe src
+
+Any functions directly related to game buttons/iframe stuff should go here!

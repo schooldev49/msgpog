@@ -1,0 +1,101 @@
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: block;
+    -webkit-transition: opacity 300ms linear;
+    -moz-transition: opacity 300ms linear;
+    -o-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+    opacity: 0;
+    width: 6px;
+    height: 6px;
+}
+
+.cursor.moving {
+    opacity: 1;
+}
+
+.cursor::before {
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #5e2bff;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: opacity 300ms linear;
+    -moz-transition: opacity 300ms linear;
+    -o-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+}
+
+.cursor.expand::before {
+    opacity: 0;
+}
+
+.node {
+    pointer-events: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: block;
+    -webkit-transition: opacity 300ms linear;
+    -moz-transition: opacity 300ms linear;
+    -o-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+    opacity: 0;
+    width: 32px;
+    height: 32px;
+}
+
+.node.moving {
+    opacity: 1;
+}
+
+.node::before {
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    border: 1px solid #bb4430;
+    transform: scale(1.5);
+    opacity: 1;
+    -webkit-transition: opacity 300ms linear, transform 300ms linear, border 300ms linear, background-color 300ms linear;
+    -moz-transition: opacity 300ms linear, transform 300ms linear, border 300ms linear, background-color 300ms linear;
+    -o-transition: opacity 300ms linear, transform 300ms linear, border 300ms linear, background-color 300ms linear;
+    transition: opacity 300ms linear, transform 300ms linear, border 300ms linear, background-color 300ms linear;
+}
+
+.node.expand::before {
+    transform: scale(3);
+    background-color: #5e2bff;
+    opacity: 0.2;
+}
+
+.hover__btn {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #5e2bff;
+    text-decoration: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

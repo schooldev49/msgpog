@@ -1,0 +1,4 @@
+Basically, big games will get their own sub folders which can house multiple proxied
+links using js into one html, then other htmls for different types of links
+or versions of the game. Otherwise the game will have the iframe hidden on the page
+and will be shown when the user selects the game.
